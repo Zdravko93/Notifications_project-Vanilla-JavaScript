@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+
+<body>
+
+  <main class="main-content">
+    <section>
+      <div class="container">
+
+        <div class="notifications-header">
+          <div class="notifications-main-info">
+            <h1 class="main-title">Notifications</h1>
+            <span class="number notification-on">3</span>
+          </div>
+          <div class="mark-all">Mark all as read</div>
+        </div>
+
+        <div class="notifications-info">
+
+          <div class="user-info active">
+            <div>
+              <div class="avatar">
+                <img src="assets/images/avatar-mark-webber.webp" alt="Profile Avatar">
+              </div>
+              <p class="user-info__text">
+                <span class="user-accent">Mark Webber</span> reacted to your recent post
+                <span class="notification-accent">My first tournament today!</span>
+                <span class="dot"></span>
+                <span class="user-time">1m ago</span>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="user-info active">
+            <div>
+              <div class="avatar">
+                <img src="assets/images/avatar-angela-gray.webp" alt="Profile Avatar">
+              </div>
+              <p class="user-info__text">
+                <span class="user-accent">Angela Gray</span>followed you
+                <span class="dot"></span>
+                <span class="user-time">5m ago</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="user-info active">
+            <div>
+              <div class="avatar">
+                <img src="assets/images/avatar-jacob-thompson.webp" alt="Profile Avatar">
+              </div>
+              <p class="user-info__text">
+                <span class="user-accent">Jacob Thompson</span> has joined your group <span
+                  class="notification-accent secondary">Chess Club</span>
+                <span class="dot"></span>
+                <span class="user-time">1 day ago</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="user-info active specific">
+
+            <div>
+              <div class="avatar">
+                <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Profile Avatar">
+              </div>
+              <p class="user-info__text">
+                <span class="user-accent">Rizky Hassanudin</span> sent you a private message
+                <span class="dot"></span>
+                <span class="user-time">5 days ago</span>
+              </p>
+            </div>
+            <div>
+              <p class="user-info__text user-info__specific">
+                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                I'm already having lots of fun and improving my game.
+              </p>
+            </div>
+          </div>
+
+          <div class="user-info active">
+            <div>
+              <div class="avatar">
+                <img src="assets/images/avatar-kimberly-smith.webp" alt="Profile Avatar">
+              </div>
+
+              <p class="user-info__text">
+                <span class="user-accent">Kimberly Smith</span> commented on your picture
+                <span class="dot"></span>
+                <span class="user-time">1 week ago</span>
+              </p>
+
+              <div class="chess-img">
+                <img src="assets/images/image-chess.webp" alt="Chess">
+              </div>
+            </div>
+          </div>
+
+          <div class="user-info active">
+            <div>
+              <div class="avatar">
+                <img src="assets/images/avatar-nathan-peterson.webp" alt="Profile Avatar">
+              </div>
+              <p class="user-info__text">
+                <span class="user-accent">Nathan Peterson</span>reacted to your recent post <span
+                  class="notification-accent">5 end-game strategies to increase your win rate</span>
+                <span class="dot"></span>
+                <span class="user-time">2 weeks ago</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="user-info active">
+            <div>
+              <div class="avatar">
+                <img src="assets/images/avatar-anna-kim.webp" alt="Profile Avatar">
+              </div>
+              <p class="user-info__text">
+                <span class="user-accent">Anna Kim</span> left the group
+                <span class="notification-accent secondary">Chess
+                  Club</span>
+                <span class="dot"></span>
+                <span class="user-time">2 weeks ago</span>
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+</body>
+
+</html>

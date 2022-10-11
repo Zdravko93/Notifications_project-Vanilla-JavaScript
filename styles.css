@@ -1,0 +1,165 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 40px;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    background: hsl(210, 60%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    background: hsl(0, 0%, 100%);
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 65vw;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-title {
+    font-size: 1.2rem;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.notifications-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notifications-main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notifications-main-info .number {
+    margin-left: .5rem;
+}
+
+
+.notification-on {
+    background:  hsl(219, 85%, 26%);
+    padding: .1rem .5rem;
+    color: white;
+    border-radius: 4px;
+} 
+
+.mark-all {
+    cursor: pointer;
+    color: hsl(219, 12%, 42%);
+    font-size: 0.9rem;
+}
+
+.active {
+    background:  hsl(210, 60%, 98%);
+}
+
+.dot {
+    background: hsl(1, 90%, 64%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: .2rem;
+    display: inline-block;
+}
+
+.user-info > div {
+
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.user-info:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    margin-right: 1rem;
+}
+
+.user-info__text {
+   color:  hsl(219, 12%, 42%);
+   font-size: 0.8rem;
+
+   flex-shrink: 5;
+}
+
+.user-accent {
+    margin-right: .5rem;
+    font-weight: bold;
+    color: hsl(224, 21%, 14%);
+}
+
+.notification-accent {
+    margin-left: .2rem;
+    font-weight: 800;
+    color:  hsl(219, 12%, 42%);
+}
+
+.secondary {
+    color:  hsl(219, 85%, 26%);
+}
+
+.user-time {
+    display: block;
+    color: hsl(219, 14%, 63%);
+}
+
+.user-info__specific {
+    outline: 1px solid hsl(211, 68%, 94%);
+    margin-left: 3.5rem;
+    margin-top: 0;
+    padding: 1rem;
+}
+
+.user-info__specific:hover {
+    background:  hsl(210, 60%, 98%);
+}
+
+.chess-img {
+    margin-left: auto;
+    padding-left: .5rem;
+}
+
+
+@media (min-width: 50em) {
+    .main-content {
+       min-width: 40vw;
+       max-width: 600px;
+    }
+
+    .user-info__text,
+    .mark-all {
+        font-size: 1rem;
+    }
+
+    .main-title {
+        font-size: 1.3rem;
+    }
+}
